@@ -1,27 +1,31 @@
-# Bases
+# Explicacion de cada archivo generado al crear un proyecto angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.9.
+.editorconfig
+Descargue una extension "EditorConfig for VS Code" permite sobreescribir valores por defecto de nuestro editor de codigo
+Lo que hace este archivo es establecer configuraciones por defecto a este proyecto, con el fin de que el codigo se mire igual en todos lados
 
-## Development server
+.gitignore
+Es un archivo propio de git para ignorar archivos que esten en este archivo para no subirlos al remoto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+angular.json
+Se le dice a angular ciertas configuraciones para la ejecucion del proyecto
 
-## Code scaffolding
+package-lock.json
+Dice como fueron construidos los modulos de node( jamas se toca, solo cuando se hagan comandos de instalacion o remover dependencias de package.json )
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+package.json
+Es algo propio de aplicaciones de node ( Este proyecto de angular esta construido sobre node )
+Dice las dependencias que la aplicacion necesita, ya sea para desarrollo o produccion.
 
-## Build
+README.md
+Debe de explicar, como funciona, corre la aplicacion, cualquier detalle para poder hacer funcionar el programa, como hacer el build, etc.
+Funciona con markdow( Es pa darle forma al texto )
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+tsconfic.app.json
+Son configuraciones de typescript
 
-## Running unit tests
+tsconfic.json
+Recomendaciones para trabajar typescript en angular de forma estandarizada
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+tsconfic.spec.json
+Son configuraciones de typescript, en la parte del testing
