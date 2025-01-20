@@ -1,5 +1,4 @@
-//Aqui use el app.component.ts para traer variables al html nada mas, ademas
-//interactue con una extension de angular en chrome para ver los resultados de esas variables al presionar F12 en la pestana angular
+
 
 <h1>{{title}}</h1>
 
@@ -7,9 +6,6 @@
 
 <h3>Counter: {{counter}}</h3>
 
-<p>
-  Bienvenidos a angular
-</p>
-
-
-<router-outlet></router-outlet>
+<button (click)="increseBy(+1)">+1</button>
+<button (click)="reset()">reset</button>
+<button (click)="increseBy(-1)">-1</button>
